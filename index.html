@@ -3,10 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi primera página web</title>
+    <title>Hoja de vida - Josselyn Ataballo</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 30px 15px;
+            color: #333;
+        }
+
+        .hoja {
+            max-width: 850px;
+            margin: auto;
+            background-color: white;
+            display: flex;
+            box-shadow: 0 2px 10px #ccc;
+        }
+
+        .izquierda {
+            width: 32%;
+            background-color: #eadde2;
+            padding: 25px;
+            box-sizing: border-box;
+        }
+
+        .derecha {
+            width: 68%;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .foto {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 25px;
+            object-fit: cover;
+            background-color: #fff;
+        }
+
+        h1 {
+            color: #654653;
+            font-size: 29px;
+            margin-top: 10px;
+        }
+
+        h2 {
+            color: #654653;
+            font-size: 18px;
+            border-bottom: 2px solid #c7a6b3;
+            padding-bottom: 7px;
+            margin-top: 25px;
+        }
+
+        .izquierda h2 {
+            color: #654653;
+        }
+
+        p, li {
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .ocupacion {
+            color: #987080;
+            font-size: 16px;
+        }
+
+        @media (max-width: 600px) {
+            .hoja {
+                flex-direction: column;
+            }
+
+            .izquierda, .derecha {
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 25px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>¡Hola, mundo!</h1>
-    <p>Esta es mi primera página web creada con GitHub.</p>
+    <div class="hoja">
+
+        <div class="izquierda">
+            <img src="foto.jpg" alt="Foto de Josselyn Ataballo" class="foto">
+
+            <h2>Datos personales</h2>
+            <p><strong>Nombre:</strong><br>Josselyn Ataballo</p>
+            <p><strong>Ciudad:</strong><br>Ecuador</p>
+            <p><strong>Correo:</strong><br>ataballojosselyn4@gmail.com</p>
+
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Responsabilidad</li>
+                <li>Creatividad</li>
+                <li>Comunicación</li>
+                <li>Uso básico de la tecnología</li>
+            </ul>
+
+            <h2>Idiomas</h2>
+            <p>Español: lengua materna</p>
+            <p>Inglés: nivel básico</p>
+        </div>
+
+        <div class="derecha">
+            <h1>Josselyn Ataballo</h1>
+            <p class="ocupacion">Estudiante</p>
+
+            <h2>Sobre mí</h2>
+            <p>
+                Soy una estudiante responsable, respetuosa y con ganas
+                de aprender cosas nuevas. Me gusta realizar mis tareas,
+                adquirir conocimientos y mejorar mis habilidades.
+                También me esfuerzo por cumplir mis objetivos y
+                aprender de cada experiencia.
+            </p>
+
+            <h2>Formación académica</h2>
+            <p><strong>Educación secundaria</strong></p>
+            <p>
+                Estudiante de bachillerato.
+                <br>Institución educativa: [Unidad Educativa Benito Juarez]
+            </p>
+
+            <h2>Experiencia</h2>
+            <p>
+                Actualmente estoy desarrollando mis conocimientos
+                mediante actividades escolares y proyectos educativos.
+                Estoy aprendiendo a utilizar herramientas digitales
+                y a crear páginas web.
+            </p>
+
+            <h2>Conocimientos</h2>
+            <ul>
+                <li>Herramientas informáticas básicas.</li>
+                <li>Creación de páginas web con HTML.</li>
+                <li>Realización de trabajos y proyectos escolares.</li>
+            </ul>
+
+            <h2>Objetivo personal</h2>
+            <p>
+                Seguir aprendiendo, terminar mis estudios y prepararme
+                para alcanzar nuevas metas personales y académicas.
+            </p>
+        </div>
+
+    </div>
 </body>
 </html>
